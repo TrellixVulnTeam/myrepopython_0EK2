@@ -21,13 +21,11 @@ class TestMen(unittest.TestCase):
     def test_fail_with_string(self):
         data = ['2', 1]
         result = men(data[0],data[1])
-        self.assertEqual(result, 1)
         self.assertEqual(result[0], "Error occured!") 
-        self.assertEqual(result[1], 500) 
-
+        self.assertEqual(result[1], 500)
+        
     def test_fail_with_single_value(self):
-        data = [2]
-        result = men(data[0],data[1])
-        self.assertEqual(result, 1)
+        data = 1
+        result = men(data)
         self.assertEqual(result[0], "Error occured!") 
         self.assertEqual(result[1], 500) 
