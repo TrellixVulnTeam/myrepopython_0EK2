@@ -34,6 +34,8 @@ jobs:
         run: pip install -r requirements.txt --use-feature=2020-resolver
         
       # Build the app and run tests
-      - name: Run Test
+      - name: Run Test Sum
         run: python -m unittest tests/sum_test.py
-	run: python -m unittest tests/men_test.py
+        
+      - name: Run Test men
+        run: python -m unittest tests/men_test.py
