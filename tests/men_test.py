@@ -1,6 +1,6 @@
 import unittest
 
-from app.routes import sum
+from app.routes import men
 
 class TestMen(unittest.TestCase):
     def test_two_int(self):
