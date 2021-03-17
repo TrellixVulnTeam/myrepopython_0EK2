@@ -14,14 +14,6 @@ def add():
     total = sum(_list)
     return 'Result= ' + str(total)
 
-@app.route('/sub')
-def sub():
-    data = request.args.get('data', None)
-    a,b = map(int, data.split(','))
-    
-    total = men(a, b)
-    return 'Result= ' + str(total)
-
 def sum(arg):
     total = 0
     try:
@@ -31,10 +23,4 @@ def sum(arg):
         return "Error occured!", 500
     return total
 
-def men(a,b):
-    total = 0
-    try:
-        total = a-b
-    except Exception:
-        return "Error occured!", 500
-    return total
+
