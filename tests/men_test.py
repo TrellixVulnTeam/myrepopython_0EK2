@@ -23,9 +23,3 @@ class TestMen(unittest.TestCase):
         result = men(data[0],data[1])
         self.assertEqual(result[0], "Error occured!") 
         self.assertEqual(result[1], 500)
-        
-    def test_fail_with_single_value(self):
-        data = 1
-        result = men(data)
-        self.assertEqual(result[0], "Error occured!") 
-        self.assertEqual(result[1], 500) 
